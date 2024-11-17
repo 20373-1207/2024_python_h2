@@ -9,6 +9,7 @@ elif month==4 or 6 or 9 or 11:
   print("there are 30 days in year",year,",month",month)
 else :
     print("there are 29 days in",year,",month",month)
+
 2. 內容： 某校為了不讓學生互相比較成績，所以成績上記錄的是成績等第而不是分數，它的規則如下：
 
 	90分(含)~100分(含)為A等
@@ -17,5 +18,29 @@ else :
 	60分(含)~70分(不含)為D等
 	不滿60分者為E等
  	現在給你一個成績，請你判斷它是哪一個等第。
+score = int(input("Enter the score: "))
+if 100 >= score >= 90:
+    print('A')
+elif 90 > score >= 80:
+    print('B')
+elif 80 > score >= 70:
+    print('C')
+elif 70 > score >= 60:
+    print('D')
+elif 60 > score >= 0:
+    print('E')
+else:
+    print('Invalid score')
+
 
 3. 從鍵盤輸入你和你朋友的年齡，編成判斷誰的年齡最大，並列印最大者的年齡。
+your_age = int(input("Enter your age: "))
+friend_age = int(input("Enter your friend's age: "))
+
+if your_age > friend_age:
+    print(your_age)
+elif your_age < friend_age:
+    print(friend_age)
+else:
+    print("Not available")
+
