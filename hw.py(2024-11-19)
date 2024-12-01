@@ -3,3 +3,23 @@
 9、鍵盤輸入，輸入 2 個數，再輸入 兩數之和，如果正確，顯示“right”，否則顯示“error”
 
 10. 從鍵盤輸入10個整數，統計其中正數、負數和零的個數，並在螢幕上輸出。
+N=5
+x=N*[0]
+c1=0
+c0=0
+c_1=0
+
+for i in range(0,N):
+  X[i] =int(input())
+  if x[i] > 0:
+    print("x[1] > 0 ")
+    c1=c1+1
+  elif x[i]<0:
+    print("x[i]<0")
+  c_1=c_1+1
+  else:
+    print("x[i] == 0 ")
+    c0=c0+1
+print("i= ",c1)
+print("==0",c0)
+print("i<0",c_1 )
