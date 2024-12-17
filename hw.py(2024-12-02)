@@ -1,0 +1,36 @@
+21. 主函式輸入 輸入 a 小時 b 分， 其中自定義一函式，時間換算，輸出  x 分
+def main():
+    # 輸入小時和分鐘
+    a = int(input("請輸入小時數 (a): "))
+    b = int(input("請輸入分鐘數 (b): "))
+    
+    # 呼叫函式計算總分鐘數
+    total_minutes = convert_to_minutes(a, b)
+    
+    # 輸出結果
+    print(f"{a} 小時 {b} 分相當於 {total_minutes} 分")
+
+# 呼叫主函式
+if __name__ == "__main__":
+    main()
+30. 用陣列實現以下功能：輸入5個學生成績，而後求出這些成績的平均值並顯示出來。
+def main():
+    # 初始化一個空列表用來存儲成績
+    scores = []
+
+    # 循環輸入5個成績
+    print("請輸入5個學生成績:")
+    for i in range(5):
+        score = float(input(f"請輸入第 {i+1} 個成績: "))
+        scores.append(score)  # 將成績加入列表
+    
+    # 計算平均值
+    average_score = sum(scores) / len(scores)
+    
+    # 顯示結果
+    print(f"5個學生成績的平均值是: {average_score:.2f}")
+
+# 呼叫主函式
+if __name__ == "__main__":
+    main()
+
